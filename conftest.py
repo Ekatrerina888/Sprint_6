@@ -4,7 +4,7 @@ from data import Urls
 
 @pytest.fixture(scope="function")
 def driver():
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
     driver.get(Urls.MAIN_PAGE)
     driver.maximize_window()
     yield driver
